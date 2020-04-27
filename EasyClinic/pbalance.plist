@@ -17,13 +17,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>tw.com.easyapp.EasyClinic</string>
+				<string>tw.com.easyapp.KantClinic</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>EasyClinic</string>
+				<string>KantClinic</string>
 			</dict>
 		</dict>
 	</array>
