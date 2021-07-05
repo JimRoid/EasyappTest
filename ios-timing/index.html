@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>???? App</title>
+    <style type="text/css">
+        body {
+            background: url(bkg.png) repeat #c5ccd4;
+            font-family: Helvetica, arial, sans-serif;
+        }
+
+        .congrats {
+            font-size: 16pt;
+            padding: 6px;
+            text-align: center;
+        }
+
+        .step {
+            background: white;
+            border: 1px #ccc solid;
+            border-radius: 14px;
+            padding: 4px 10px;
+            margin: 10px 0;
+        }
+
+        .instructions {
+            font-size: 10pt;
+        }
+
+        .arrow {
+            font-size: 15pt;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+    <script type='text/javascript'>
+        function dirname() {
+            return window.location.href.replace(/\\/g, '/').replace(/\/[^\/]*$/, '');
+        }
+
+        window.onload = function () {
+            let path = dirname();
+            let url = 'itms-services://?action=download-manifest&url=' + path + '/app.plist';
+            let plist = document.getElementById("plist");
+            plist.href = url;
+        };
+    </script>
+</head>
+<body>
+
+<div class="congrats">Congrats! You've been invited to the beta of App.</div>
+
+<div class="step">
+    <table>
+        <tr>
+            <td class="instructions">Install the<br/>apex iOS APP beta 1.2</td>
+            <td class="instructions">??????<br/>2021.07.05 12:05:32</td>
+            <td style='text-align:right'>Tap</td>
+            <td width="24" class="arrow">&rarr;</td>
+            <td width="57" class="imagelink">
+                <a href="" id='plist'>
+                    <img src="big.png" height="57" width="57"/>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+</div>
+</body>
+</html>
